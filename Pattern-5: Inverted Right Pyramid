@@ -1,0 +1,55 @@
+/*Problem Statement: Given an integer N, print the following pattern : 
+
+
+Here, N = 5.
+
+Examples:
+
+Input Format: N = 3
+Result: 
+* * *
+* * 
+*
+
+Input Format: N = 6
+Result:
+* * * * * *
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+GFG SOLUTION ;
+
+class Solution {
+
+    void printTriangle(int n) {
+       for(int i=1;i<=n;i++){
+           for(int j=1;j<=n-i+1;j++){
+               System.out.print("* ");
+           }
+           System.out.println();
+       }
+        
+    }
+}
+
+2. FULL CODE; 
+import java.util.*;
+class Main {
+   static void printTriangle(int n) {
+       for(int i=1;i<=n;i++){
+           for(int j=1;j<=n-i+1;j++){
+               System.out.print("* ");
+           }
+           System.out.println();
+       }
+        
+    }
+public static void main(String [] args){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+printTriangle(n);
+}
+}
